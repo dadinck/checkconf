@@ -1,0 +1,44 @@
+checkfunc sys/types,sys/dir alphasort
+checkheader none dirent.h
+checkfunc stdlib div(int a, int b)
+checkfunc none doprnt(char * fmt)
+checkheader none fcntl.h
+checkfunc unistd getopt(int cnt, char ** vec, const char * opt)
+checkheader none inttypes.h
+checkheader none limits.h
+checkfunc unistd link(char * a, char * b)
+checkheader none malloc.h
+checkfunc string memcpy(void * a, void * b, int cnt)
+checkfunc string memmove(void * a, void * b, int count)
+checkheader none memory.h
+checkfunc string memset(void * a, int c, size_t n)
+checkheader none ndir.h
+checkfunc sys/types,dirent opendir(char * name)
+checkheader none pthread.h
+checkfunc stdlib putenv(char * env)
+checkfunc sys/types,dirent scandir(char * dname, struct dirent * * list, int af, int ab)
+checkfunc sys/time, select(int nfds, fd_set * read, fd_set * write, fd_set * except, struct timeval * tmout)
+checkfunc signal sigaction(int sig, struct sigaction * siga, struct sigaction * oldsig)
+checkfunc sys/socket socket(int dom, int type, int proto)
+checkfunc stat stat(char * file, struct stat * retval)
+checkheader none stdint.h
+checkheader none stdlib.h
+checkfunc string strchr(char * str, int ch)
+checkfunc string strcoll(char * s1, char * s2)
+checkfunc string strerror(int err)
+checkfunc time strftime(char * st, size_t maxs, char * form, struct tm * tim)
+checkheader none strings.h
+checkheader none string.h
+checkfunc strings strncasecmp(char * s1, char * s2, size_t num)
+checkfunc string strnicmp(char * s1, char * s2, int num)
+checkfunc string strstr(char * s1, char * s2)
+checkheader none sys/dir.h
+checkheader none sys/msg.h
+checkheader none sys/ndir.h
+checkheader none sys/select.h
+checkheader none sys/signal.h
+checkheader none sys/stat.h
+checkheader none sys/time.h
+checkheader none sys/types.h
+checkheader none unistd.h
+checkfunc stdio,stdarg vprintf(char * fmt, va_list list)
