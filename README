@@ -1,0 +1,19 @@
+checkconf is a light configuration checker for C languages. It will check
+
+-Header files
+-functions/macros
+-libraries
+
+The default configuration files given with the distribution will check the usual 
+libraries, defines, and headers.
+
+Compiling the code should be straight forward
+
+cc checkconf.c -o checkconf
+
+Then run.
+
+./checkconf
+
+It should automatically pick up the proper check file for your system. If a different
+check file is desired, that can be entered as an argument (on some OS's).
